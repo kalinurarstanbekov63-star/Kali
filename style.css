@@ -1,0 +1,103 @@
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    scroll-behavior: smooth; 
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.main-overlay {
+    min-height: 100vh;
+}
+
+/* ДҮЙНӨЛҮК РЕЙТИНГДЕГИ СУПЕР ГЛАСС-ДИЗАЙН */
+.glass-premium {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+}
+
+.glass-dark { 
+    background: rgba(30, 41, 59, 0.75); 
+    backdrop-filter: blur(24px);
+    color: white;
+    border-radius: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.6);
+}
+
+/* СОЧНЫЙ ЛАЙМ БАСКЫЧТАРЫ (АДАМДЫН БАСКЫСЫ КЕЛЕТ) */
+.btn-lime-juicy {
+    background: linear-gradient(135deg, #a3e635 0%, #84cc16 100%);
+    color: #0f172a;
+    font-weight: 800;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px -4px rgba(163, 230, 53, 0.5);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-lime-juicy:hover { 
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 12px 24px -2px rgba(163, 230, 53, 0.6); 
+}
+.btn-lime-juicy:active { transform: translateY(-1px); }
+
+/* СОЧНЫЙ КАРА БАСКЫЧ */
+.btn-dark-juicy {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px -4px rgba(15, 23, 42, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-dark-juicy:hover { 
+    transform: translateY(-3px) scale(1.02); 
+    box-shadow: 0 12px 24px -2px rgba(15, 23, 42, 0.4); 
+}
+
+/* СОЧНЫЙ КЫЗЫЛ БАСКЫЧ */
+.btn-red-juicy {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: white;
+    font-weight: 700;
+    border-radius: 14px;
+    box-shadow: 0 6px 15px -3px rgba(239, 68, 68, 0.4);
+    transition: all 0.2s ease;
+}
+.btn-red-juicy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -2px rgba(239, 68, 68, 0.5);
+}
+
+.input-dark {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 18px;
+    border-radius: 16px;
+    outline: none;
+    transition: all 0.2s;
+}
+.input-dark:focus { border-color: #a3e635; background: rgba(15, 23, 42, 0.6); box-shadow: 0 0 0 3px rgba(163, 230, 53, 0.2); }
+
+.nav-active { color: #84cc16; font-weight: 800; border-bottom: 3px solid #a3e635; }
+.admin-card { border-left: 6px solid #ef4444; background: white; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05); }
+
+.break-word-custom {
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Премиум карточкалардын стили */
+.premium-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    border-radius: 32px;
+    transition: all 0.3s ease;
+}
+.premium-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 40px -10px rgba(0, 0, 0, 0.12);
+}
+

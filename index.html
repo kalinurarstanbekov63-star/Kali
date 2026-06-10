@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кара-Көл ИШ БУЛАК</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+ 
+<body>
+    <div id="root" class="main-overlay"></div>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getDatabase, ref, set, push, onValue, remove } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+        import { getStorage, ref as sRef, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, updateProfile } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyDUY_JDVj9CkmNyZSXWDpubAHQ6v7g9Sns",
+            authDomain: "jumush-app.firebaseapp.com",
+            databaseURL: "https://jumush-app-default-rtdb.firebaseio.com",
+            projectId: "jumush-app",
+            storageBucket: "jumush-app.appspot.com",
+            messagingSenderId: "623111354874",
+            appId: "1:623111354874:web:758f0c1945e96d2bbd0c43"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        window.fbAuth = getAuth(app);
+        window.fbDB = getDatabase(app);
+        window.fbStorage = getStorage(app);
+        window.fbApi = { ref, set, push, onValue, remove, sRef, uploadBytes, getDownloadURL, createUser: createUserWithEmailAndPassword, signIn: signInWithEmailAndPassword, onAuth: onAuthStateChanged, signOut, updateProfile };
+    </script>
+
+    <script type="text/babel" src="script.js"></script>
+</body>
+</html>
+
+
+http://127.0.0.1:5500/index.html
